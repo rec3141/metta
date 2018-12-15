@@ -1,0 +1,2 @@
+samtools index bamfile.bam
+

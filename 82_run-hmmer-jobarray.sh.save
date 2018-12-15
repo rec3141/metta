@@ -1,0 +1,10 @@
+
+# submit jobarray to chinook
+split -l 28 -d hmmer_jobarray.sh hmmer_jobarray.
+rm hmmer_jobarray.sh
+
+for file in hmmer*; do
+        NN=`grep -c '^' $file`
+        sbatch --array=1-$NN ./run-jobarray.sh $file $NN;
+done
+
