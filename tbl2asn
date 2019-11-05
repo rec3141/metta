@@ -1,2 +1,0 @@
-#!/bin/bash
-echo "tbl2asn 99.99" # fake version number so PROKKA detects a version number
